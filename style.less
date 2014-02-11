@@ -1,0 +1,146 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+@color-theme : #1e92cc;
+@color-headline : #282825;
+@color-paragraph : #959aa4;
+
+@font-headline : "Open Sans", sans-serif;
+@font-normal : "Open Sans", sans-serif;
+
+* {
+	-webkit-transition: All 0.3s ease;
+	-moz-transition: All 0.3s ease;
+	-o-transition: All 0.3s ease;
+	-ms-transition: All 0.3s ease;
+	transition: All 0.3s ease;
+}
+body {
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	color: @color-paragraph;
+	font-family: @font-normal;
+
+	a {
+		color: @color-theme;
+		cursor: pointer;
+		&:hover {
+			color: darken(@color-theme, 10%);
+			text-decoration: none;
+		}
+	}
+	h1,h2,h3,h4,h5,h6 {
+		font-family: @font-headline;
+		font-weight: 800;
+		color: @color-headline;
+	}
+	p {
+		font-size: 18px;
+		line-height: 1.5;
+		color: @color-paragraph;
+	}
+	blockquote {
+		border:none;
+		color: @color-theme;
+		font-family: @font-headline;
+		font-size: 21px;
+	}
+
+	header#main {
+		#branding {
+			display: inline-block;
+			margin:0 30px 0 0;
+		}
+		#main-navigation {
+			li {
+				a {
+					color: #333;
+					font-size: 12px;
+					font-weight: 700;
+					text-transform: uppercase;
+					padding:10px 0 0;
+				}
+			}
+		}
+	}
+	#featured {
+		margin-top: 50px;
+		.media {
+			.media-object {
+				margin-right: 50px;
+			}
+			.media-body {
+				.media-heading {
+					font-size: 24px;
+					margin: 0;
+				}
+				p.lead {
+					font-size: 16px;
+					font-weight: 600;
+					color: #61656e;
+					margin: 0;
+				}
+				p {
+					font-size: 13px;
+					margin-bottom: 20px;
+				}
+				a.btn {
+					background: #d2d6db;
+					border-radius: 0;
+					font-weight: 600;
+					font-size: 24px;
+					margin-bottom: 20px;
+					span {
+						font-size: 14px;
+						color: rgba(0,0,0,0.5);
+						font-weight: 400;
+						vertical-align: 30%;
+						line-height: 1;
+					}
+					&:hover {
+						background: @color-theme;
+						color: #fff;
+						span {
+							color: rgba(255,255,255,0.7);
+						}
+					}
+				}
+				ul.profile-skills {
+					margin-bottom: 80px;
+					li {
+						margin-bottom: 3px;
+						&:before {
+							content: '--';
+							margin-right: 10px;
+						}
+						a {
+							color: @color-paragraph;
+							font-size: 13px;
+						}
+					}
+				}
+			}
+		}
+		.sidebar {
+			border-left: #d2d6db dotted 2px;
+			padding:0 0 0 2px;
+			.resume {
+				border-bottom: #d2d6db dotted 2px;
+				padding:0 60px 30px;
+			}
+		}
+	}
+	#quote {
+		.container {
+			padding-top:40px;
+			padding-bottom: 40px;
+			border-top: #d2d6db dotted 2px;
+			border-bottom: #d2d6db dotted 2px;
+		}
+		blockquote {
+			width: 80%;
+			margin: 0 auto;
+			text-align: center;
+			font-style: italic;
+		}
+	}
+}
