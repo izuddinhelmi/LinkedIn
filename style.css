@@ -73,7 +73,7 @@ body #featured .media .media-body p {
   margin-bottom: 20px;
 }
 body #featured .media .media-body a.btn {
-  background: #d2d6db;
+  background: #ebeff0;
   border-radius: 0;
   font-weight: 600;
   font-size: 24px;
@@ -81,7 +81,7 @@ body #featured .media .media-body a.btn {
 }
 body #featured .media .media-body a.btn span {
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #959aa4;
   font-weight: 400;
   vertical-align: 30%;
   line-height: 1;
